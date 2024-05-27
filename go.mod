@@ -1,3 +1,3 @@
-module github.com/guru/some
+module github.com/gurusudhan25
 
 go 1.20
