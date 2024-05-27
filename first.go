@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 
 	"github.com/gurusudhan25/milestone2"
@@ -28,6 +29,14 @@ func main() {
 
 	// Looping
 	milestone3.PrintNumbers()
+}
+
+func Hello(name string) (string, error) {
+	var err error
+	if len(name) == 2 {
+		err = errors.New("short name")
+	}
+	return name, err
 }
 
 // gopls -> Language server protocal auto detection and remove unused
