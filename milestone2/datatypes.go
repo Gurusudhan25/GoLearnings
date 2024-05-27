@@ -2,7 +2,7 @@ package milestone2
 
 import "fmt"
 
-// Interger types
+// declaration
 // var
 var age int = 24
 var year int = 2024
