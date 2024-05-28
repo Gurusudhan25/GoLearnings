@@ -20,7 +20,7 @@ func AddNumber(num1 int, num2 int) (int, error) {
 	return add, err
 }
 
-func SayAllMaxValues() {
+func SayAllMaxValuesOfNumber() {
 
 	// Int
 	fmt.Println(math.MaxInt8)

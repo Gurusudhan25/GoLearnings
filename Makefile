@@ -6,5 +6,6 @@ build:
 
 test: 
 	go test
+
 clean:
 	rm main
