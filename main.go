@@ -1,11 +1,11 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 
-	"github.com/gurusudhan25/milestone2"
-	"github.com/gurusudhan25/milestone3"
+	"github.com/gurusudhan25/pkg/milestone2"
+	"github.com/gurusudhan25/pkg/milestone3"
+	"github.com/gurusudhan25/pkg/milestone4"
 )
 
 func main() {
@@ -14,15 +14,7 @@ func main() {
 
 	var age = [5]int{29, 23, 21, 24, 22}
 	milestone3.SortArray(age)
-}
-
-// Unit testing function
-func Hello(name string) (string, error) {
-	var err error
-	if len(name) == 2 {
-		err = errors.New("short name")
-	}
-	return name, err
+	milestone4.Milestone4()
 }
 
 func ErrorHandling() {

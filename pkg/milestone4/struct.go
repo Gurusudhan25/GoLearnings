@@ -13,3 +13,7 @@ func init() {
 	a := fmt.Sprintf("%p, %p, %p", &str.X, &str.Y, &str)
 	fmt.Println(a)
 }
+
+func Milestone4() {
+	fmt.Println("In Mile stone 3")
+}

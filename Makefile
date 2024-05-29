@@ -1,8 +1,8 @@
 run: 
 	go run .
 
-build: 
-	go build -o main
+builds: 
+	go build -o ./build/main
 
 test: 
 	go test
