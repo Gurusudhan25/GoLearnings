@@ -5,6 +5,7 @@ import "fmt"
 func init() {
 	moreForLoops()
 	slice()
+	mapPractice()
 }
 
 func SortArray(age [5]int) {
