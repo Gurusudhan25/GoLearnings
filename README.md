@@ -121,6 +121,7 @@ func internalFunction() {
 | `int32`  | `[]byte` |
 
 ### Print
+---
 
 Printf - Formatted printing
 ```
@@ -146,4 +147,46 @@ fmt.Println("World")
 // Output
 Hello World
 ```
+---
 
+### Deep dive to Structs{}
+---
+
+A structure or struct in Golang is a user-defined type that allows to group/combine items of possibly different types into a single type
+
+```
+// Basic example of struc
+type User struct {
+	Name string
+	Age  int
+	City string
+}
+```
+Nested struct
+
+A structure which is the field of another structure is known as Nested Structure.
+```
+type Student struct {
+	Name string
+	Age  int
+}
+
+type School struct {
+	Students []Student
+	Place    string
+}
+```
+
+Anonymous struct
+
+An anonymous structure is a structure which does not contain a name. It useful when you want to create a one-time usable structure.
+
+```
+school := struct {
+	Students []Student
+	Place    string
+}{
+  Students: {{"Xyz", 22}, {"Abc", 24}}
+  Place: "Chennai"
+}
+```

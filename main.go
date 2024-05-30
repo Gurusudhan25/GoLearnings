@@ -14,7 +14,11 @@ func main() {
 
 	var age = [5]int{29, 23, 21, 24, 22}
 	milestone3.SortArray(age)
-	milestone4.Milestone4()
+	student3 := milestone4.Student{
+		Name: "Sudhan",
+		Age:  12,
+	}
+	fmt.Println(&student3.Age)
 }
 
 func ErrorHandling() {
